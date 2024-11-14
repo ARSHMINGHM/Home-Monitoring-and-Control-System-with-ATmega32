@@ -1,0 +1,46 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+txt                                                                               0x0260      32
+_seed                                                                             0x0280       4
+_base_y                                                                           0x0284       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+_lcd_x                                                                            R5           1
+_lcd_y                                                                            R4           1
+_lcd_maxx                                                                         R7           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x0010F     14
+PwmLed_init                                                                       0x0011D      4
+PwmLed_init_rev                                                                   0x00121      3
+PwmFAN_init                                                                       0x00124      4
+PwmFAN_init_rev                                                                   0x00128      3
+LCD_LED_LEVEL                                                                     0x0012B     20
+COUNT_Pressed                                                                     0x0013F     19
+COUNT_Pressed_TEMP                                                                0x00152     27
+LCD_MENU                                                                          0x0016D     57
+LCD_CHANGE_TEMP                                                                   0x001A6     49
+LCD_FAN_SPEED                                                                     0x001D7     62
+main                                                                              0x00215    182
+put_buff_G100                                                                     0x002CB     64
+_print_G100                                                                       0x0030B    308
+sprintf                                                                           0x0043F     52
+abs                                                                               0x00473     10
+_lcd_write_nibble_G102                                                            0x0047D     20
+_lcd_write_data                                                                   0x00491     12
+lcd_gotoxy                                                                        0x0049D     13
+lcd_clear                                                                         0x004AA     12
+lcd_putchar                                                                       0x004B6     21
+lcd_puts                                                                          0x004CB     17
+lcd_init                                                                          0x004DC     46
+strlen                                                                            0x0050A     12
+strlenf                                                                           0x00516     13
